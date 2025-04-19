@@ -3,16 +3,15 @@ import cv2
 import time
 import numpy as np
 
-# Load the YOLOv8 model (e.g., 'yolov8s' for small variant)
-model = YOLO('yolov8s.pt')  # Pre-trained weights; download if not present
+model = YOLO('yolov8s.pt')
 
 # Initialize webcam
-cap = cv2.VideoCapture(0)  # 0 is the default webcam
+cap = cv2.VideoCapture(0)  # Ustawienie źródła obrazu
 if not cap.isOpened():
     print("Error: Could not open webcam.")
     exit()
 
-# Set resolution (optional, for performance)
+# Roździelczość(jakość systemu)
 cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
 cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
 

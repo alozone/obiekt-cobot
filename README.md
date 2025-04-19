@@ -39,3 +39,10 @@ python main.py
 
 Aplikacja powinna uruchomić się w nowym oknie, wyświetlając obraz z kamery z wykrytymi obiektami.
 Aby zakończyć działanie aplikacji, naciśnij klawisz q.
+
+## Ustawianie źródła obrazu
+1. W pliku main.py jest ustawione źródło kamery. Jeżeli występuję błąd, należy 
+sprawdzić jakie źródło mogłobyć poprawne. (1,2,3)
+```python
+cap = cv2.videoCapture(source)
+```
